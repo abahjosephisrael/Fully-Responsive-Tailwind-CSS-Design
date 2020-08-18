@@ -1,0 +1,66 @@
+.active{
+   border-bottom: solid white 2px;
+   margin-left:2rem;
+   margin-top:2rem;
+}
+
+.menuItems{
+   position: fixed;
+   top: 52%;
+   left: 49%;
+   transform: translateX(-33%) translateY(-40%);   
+   padding: 10px;
+   text-align: center;
+   height: 80%;   
+   z-index: 2;
+}
+.headerLink{
+   z-index: 1;
+}
+
+#profilePix{
+   height: 250px;
+   width: 250px;
+   margin-left: 10px;
+}
+
+#social{
+   margin-top: -30%;
+   position: fixed;
+   margin-left: -70px;
+}
+@media(max-width:700px){
+   .menuItems{
+      left:50%;
+      width: 90%;
+      z-index: 2;
+      position: absolute;   
+      transform: translateX(-50%) translateY(-40%);   
+   }
+   .Dashboard{     
+      position: sticky;
+   }
+   .headerLink{
+      z-index: 20;
+   }
+   #profilePix{
+      height: 150px;
+      width: 150px;
+      margin-left: 40px;
+   }
+   #social{
+      margin-top: -80%;
+      position: fixed;
+   }
+   .hide{
+      margin-left: -220px;      
+   }
+   .appear{
+      margin-left: 0px;      
+   }
+   #dashboardToggle2{
+      float: unset;
+      align-self: flex-end;
+   }
+   
+}

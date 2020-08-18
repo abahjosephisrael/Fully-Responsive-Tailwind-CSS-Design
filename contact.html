@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iBrand-Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tailwind.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/emoji.css">
+</head>
+<body>
+	<header class="fixed bg-blue-600 p-6 text-white flex items-center justify-between flex-wrap w-full" style="z-index:3">
+			<a href="index.html"class="font-bold text-2xl flex items-center flex-shrink-0 mr-6 hover:text-blue-200 transform transition-all duration-500">
+				<span class="em em-grinning"></span>&nbsp;&nbsp;iBrand
+			</a>
+			<label id="toggle" class="md:hidden sm:visible cursor-pointer border p-1 transform transition-all duration-500 hover:bg-blue-700 rounded items-center">
+				<i class="fa fa-bars text-white text-3xl transition-all duration-900" id="menu"></i>
+			</label>
+			<div id="navItems"class="hidden transition-all duration-500 w-full block flex-grow sm:flex sm:items-center sm:w-auto opacity-100">
+				<div class="text-lg sm:flex-grow ">
+				  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4"href="index.html"><i class="fa fa-home"></i> Home</a>
+				  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4 "href="about.html"><i class="fa fa-info-circle"></i> About</a>
+				  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4"href="services.html"><i class="fa fa-medal"></i> Services</a>
+				  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4 active"href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+				</div>
+				<button 
+					class="uppercase border text-sm font-bold p-2 rounded-lg mt-2 w-30 focus:outline-none hover:bg-blue-800 transform transition-all duration-500">
+					<i class="fa fa-user"></i>&nbsp;
+					<a href="login.html" >
+					login
+					</a>
+				</button>
+			</div>
+	</header>
+	<div class="w-screen h-screen flex flex-col justify-center items-center z-3 pt-12">
+		<div class="bg-blue-600 items-center lg:h-3/12  lg:w-2/5 rounded-lg  mt-8">
+			<div class="items-center p-6">
+			
+				<form action="#" class="flex flex-col justify-center  items-center w-full mt-4">
+					<h2 class="font-display font-bold text-3xl pb-8">
+						Send us a message                                           
+					</h2>
+					<div class="relative w-full">
+						<i class="text-white absolute">
+							<i class="fa fa-user"></i>
+						</i>
+						<input
+							required
+							type="text"
+							name="name" 
+							id="name"
+							placeholder="Name"
+							class="transition-all duration-500 focus:outline-none pl-6 border-b-2 shadow-lg bg-transparent text-white font-display w-full border-blue-300 placeholder-gray-300 focus:border-white"
+						>
+					</div>
+						
+					<div class="relative mt-8 w-full">
+						<i class="text-white items-center absolute">
+							<i class="fa fa-envelope"></i>
+						</i>
+						<input
+							required
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email "
+							class="transition-all duration-500 focus:outline-none pl-5 shadow-lg border-b-2 bg-transparent text-white font-display w-full border-blue-300 placeholder-gray-300 focus:border-white"
+						>
+					</div>
+						
+					<div class="relative mt-8 w-full">
+						<i class="items-start text-white absolute">
+							<i class="fa fa-pen" ></i>
+						</i>
+						<input
+							required
+							type="text"
+							name="subject" 
+							id="subject"
+							placeholder="Subject"
+							class="transition-all duration-500 focus:outline-none pl-5 shadow-lg border-b-2 bg-transparent text-white font-display w-full border-blue-300 placeholder-gray-300 focus:border-white capitalize"
+						>
+					</div>
+						
+					<div class="relative mt-8 w-full">
+						<i class="items-start text-white absolute">
+							<i class="fa fa-leaf"></i>
+						</i>
+						<textarea
+							required
+							min="20"
+							name="message" 
+							id="message"
+							placeholder="Message"
+							class="transition-all duration-500 shadow-lg focus:outline-none pl-5 pr-8 border-b-2 bg-transparent text-white font-display w-full h-20 border-blue-300 placeholder-gray-300 focus:border-white text-justify "
+						></textarea>
+					</div>	
+					<div class ="justify-end">
+						<button 
+							type="submit" 
+							value="send"
+							class="uppercase font-bold mt-4 m-5 transform transition-all duration-500 focus:translate-y-1 rounded-full bg-transparent cursor-pointer w-20 hover:bg-blue-800 shadow-lg  text-center p-2 border focus:outline-none"
+						>
+							send		
+						</button>
+						
+						<button 
+							type="reset" 
+							value="clear"
+							class="uppercase font-bold mt-4 m-5 transform hover:translate-y-1 transition-all duration-500  rounded-full bg-transparent cursor-pointer w-20 focus:bg-red-800 shadow-lg  text-center p-2 border focus:outline-none"
+						> 
+							clear		
+						</button>                        
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js">
+	</script>
+ </body>
+</html>

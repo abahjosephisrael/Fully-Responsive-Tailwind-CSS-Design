@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBrand-Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/emoji.css">
+</head>
+<body>
+    <header class="fixed bg-blue-600 p-6 text-white flex items-center justify-between flex-wrap w-full" style="z-index:3">
+            <a href="index.html"class="font-bold text-2xl flex items-center flex-shrink-0 mr-6 hover:text-blue-200 transform transition-all duration-500">
+                <span class="em em-grinning"></span>&nbsp;&nbsp;iBrand
+            </a>
+            <label id="toggle" class="md:hidden sm:visible cursor-pointer border p-1 transform transition-all duration-500 hover:bg-blue-700 rounded items-center">
+                <i class="fa fa-bars text-white text-3xl transition-all duration-900" id="menu"></i>
+            </label>
+            <div id="navItems"class="hidden transition-all duration-500 w-full block flex-grow sm:flex sm:items-center sm:w-auto opacity-100">
+                <div class="text-lg sm:flex-grow ">
+                  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4 "href="index.html"><i class="fa fa-home"></i> Home</a>
+                  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4"href="about.html"><i class="fa fa-info-circle"></i> About</a>
+                  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4"href="services.html"><i class="fa fa-medal"></i> Services</a>
+                  <a class="block mt-4 sm:inline-block sm:mt-0 hover:text-gray-500 mr-4"href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+                </div>
+                <a href="login.html" class="hidden">
+                <button 
+                	class="uppercase border text-sm font-bold p-2 rounded-lg mt-2 w-30 focus:outline-none hover:bg-blue-800 transform transition-all duration-500 active">
+                	<i class="fa fa-user"></i>&nbsp;
+                	
+                	login
+                	
+                </button>
+            </a>
+            </div>
+    </header>
+    <div class="w-screen h-screen flex flex-col justify-center items-center z-auto">
+        <img src="img/user2.png" alt="" class="rounded-full border pt-1 bg-blue-600 border-blue-200 w-24 lg:w-30 absolute shadow-2xl " style="margin-top: -13rem;">    
+        <div class="bg-blue-600 items-center lg:h-5/6 lg:w-2/5 rounded-lg p-12 "style="margin-top:10rem;">
+            
+            <div class="items-center p-2">
+
+                <form action="dashboard.html" class="flex flex-col justify-center  items-center w-full">
+                    
+                    <h2 class="font-display font-bold text-3xl">
+                        Welcome                                                
+                    </h2>
+                    <div class="relative w-full pt-8">
+                        <i class="items-end text-white absolute">
+                            <i class="fa fa-user"></i>
+                        </i>
+                        <input                            
+                            required
+                            type="text"
+                            name="username" 
+                            id="username"
+                            placeholder="username"
+                            class="transition-all shadow-lg duration-500 focus:outline-none pl-6 border-b-2 bg-transparent text-white font-display w-full border-blue-300 placeholder-gray-300 focus:border-white"
+                        >
+                    </div>
+
+                    <div class="relative mt-8 w-full">
+                        <i class="text-white items-end absolute">
+                            <i class="fa fa-lock"></i>
+                        </i>
+                        <input
+                            required
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="password"
+                            class="transition-all shadow-lg duration-300 focus:outline-none pl-6 border-b-2 bg-transparent text-white font-display w-full border-blue-300 placeholder-gray-300 focus:border-white"
+                        >
+                    </div>
+                    <a href="#" class="self-center  pt-3 transition-all duration-500 hover:text-blue-200 focus:outline-none">
+                        Forgot password?
+                    </a>
+                    <input 
+                        type="submit" 
+                        value="Login"
+                        class="uppercase outfont-bold mt-4 transform transition-all duration-500 focus:translate-y-1 rounded-full bg-transparent cursor-pointer w-40 hover:bg-blue-800 shadow-lg  text-center p-2 border focus:outline-none"
+                    >                        
+                </input>
+                </form>
+            </div>
+        </div>
+    </div>
+    <blockquote class="hidden text-blue-700 p-4 lg:w-1/2 float-right w-screen text-justify relative">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aspernatur aliquam voluptatum accusamus veniam vitae necessitatibus veritatis, sunt quaerat, inventore quasi rem esse commodi. Laboriosam provident vitae labore. Dicta error reiciendis optio adipisci nisi magnam quas dolorem dolor vitae facere.
+    </blockquote>
+    <footer class="hidden bg-blue-600 p-2 text-white flex items-center justify-center flex-wrap w-screen">
+        
+    </footer>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</body>
+</html>
